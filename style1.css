@@ -106,7 +106,7 @@ body:before {
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.639), rgba(0, 0, 0, 0.639)), url('http://emooot.gitbub.io/bg.gif');
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.639), rgba(0, 0, 0, 0.639)), url('http://emooot.github.io/bg.gif');
 	background-position: 0% 0%, center;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, cover;
