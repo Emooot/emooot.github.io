@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,4 +53,60 @@
 	var on = addEventListener,$ = function(q) { return document.querySelector(q) },$$ = function(q) { return document.querySelectorAll(q) },$body = document.body,$inner = $('.inner'),client = (function() {var o = {browser: 'other',browserVersion: 0,os: 'other',osVersion: 0,canUse: null},ua = navigator.userAgent,a, i;a = [['firefox', /Firefox\/([0-9\.]+)/],['edge', /Edge\/([0-9\.]+)/],['safari', /Version\/([0-9\.]+).+Safari/],['chrome', /Chrome\/([0-9\.]+)/],['ie', /Trident\/.+rv:([0-9]+)/]];for (i=0; i < a.length; i++) {if (ua.match(a[i][1])) {o.browser = a[i][0];o.browserVersion = parseFloat(RegExp.$1);break;}}a = [['ios', /([0-9_]+) like Mac OS X/, function(v) { return v.replace('_', '.').replace('_', ''); }],['ios', /CPU like Mac OS X/, function(v) { return 0 }],['android', /Android ([0-9\.]+)/, null],['mac', /Macintosh.+Mac OS X ([0-9_]+)/, function(v) { return v.replace('_', '.').replace('_', ''); }],['windows', /Windows NT ([0-9\.]+)/, null]];for (i=0; i < a.length; i++) {if (ua.match(a[i][1])) {o.os = a[i][0];o.osVersion = parseFloat( a[i][2] ? (a[i][2])(RegExp.$1) : RegExp.$1 );break;}}var _canUse = document.createElement('div');o.canUse = function(p) {var e = _canUse.style,up = p.charAt(0).toUpperCase() + p.slice(1);return (p in e|| ('Moz' + up) in e|| ('Webkit' + up) in e|| ('O' + up) in e|| ('ms' + up) in e);};return o;}()),trigger = function(t) {if (client.browser == 'ie') {var e = document.createEvent('Event');e.initEvent(t, false, true);dispatchEvent(e);} else dispatchEvent(new Event(t));};on('load', function() {setTimeout(function() {$body.className = $body.className.replace(/\bis-loading\b/, 'is-playing');setTimeout(function() {$body.className = $body.className.replace(/\bis-playing\b/, 'is-ready');}, 1500);}, 100);});var style, sheet, rule;style = document.createElement('style');style.appendChild(document.createTextNode(''));document.head.appendChild(style);sheet = style.sheet;if (client.os == 'android') {(function() {sheet.insertRule('body::after { }', 0);rule = sheet.cssRules[0];var f = function() {rule.style.cssText = 'height: ' + (Math.max(screen.width, screen.height)) + 'px';};on('load', f);on('orientationchange', f);on('touchmove', f);})();} else  if (client.os == 'ios') {(function() {sheet.insertRule('body::after { }', 0);rule = sheet.cssRules[0];rule.style.cssText = '-webkit-transform: scale(1.0)';})();(function() {sheet.insertRule('body.ios-focus-fix::before { }', 0);rule = sheet.cssRules[0];rule.style.cssText = 'height: calc(100% + 60px)';on('focus', function(event) {$body.classList.add('ios-focus-fix');}, true);on('blur', function(event) {$body.classList.remove('ios-focus-fix');}, true);})();} else  if (client.browser == 'ie') {(function() {var t, f;f = function() {var mh, h, s, xx, x, i;x = $('#wrapper');x.style.height = 'auto';if (x.scrollHeight <= innerHeight)x.style.height = '100vh';xx = $$('.container.full');for (i=0; i < xx.length; i++) {x = xx[i];s = getComputedStyle(x);x.style.minHeight = '';x.style.height = '';mh = s.minHeight;x.style.minHeight = 0;x.style.height = '';h = s.height;if (mh == 0)continue;x.style.height = (h > mh ? 'auto' : mh);}};(f)();on('resize', function() {clearTimeout(t);t = setTimeout(f, 250);});on('load', f);})();}if (!client.canUse('object-fit')) {var xx = $$('.image[data-position]'),x, c, i, src;for (i=0; i < xx.length; i++) {x = xx[i];c = x.firstChild;if (c.tagName != 'IMG')c = c.firstChild;if (c.parentNode.classList.contains('deferred')) {c.parentNode.classList.remove('deferred');src = c.getAttribute('data-src');c.removeAttribute('data-src');} else src = c.getAttribute('src');c.style['backgroundImage'] = 'url(\'' + src + '\')';c.style['backgroundSize'] = 'cover';c.style['backgroundPosition'] = x.dataset.position;c.style['backgroundRepeat'] = 'no-repeat';c.src = 'data:image/svg+xml;charset=utf8,' + escape('<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 1 1"><\/svg>');}}
 	</script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The International Festival of Beer Pong</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+	<meta content="The IFBP - Part 4" name="description">
+	<meta content="International Festival of Beer Pong" property="og:site_name">
+	<meta content="International Festival of Beer Pong" property="og:title">
+	<meta content="event" property="og:type">
+	<meta content="The IFBP - Part 4" property="og:description">
+	<meta content="https://www.ifbp.ie" property="og:url">
+	<link href="https://emooot.github.io/favicon.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="https://emooot.github.io/applefavicon.png" rel="apple-touch-icon" sizes="60x60">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,400italic" rel="stylesheet" type="text/css">
+	<link href="https://emooot.github.io/style1.css" rel="stylesheet">
+	<noscript>
+	<link href="https://emooot.github.io/style2.css" rel="stylesheet">
+	</noscript>
+</head>
+<body class="is-loading">
+	<svg height="0" version="1.1" viewbox="0 0 40 40" width="0" xmlns="http://www.w3.org/2000/svg">
+	<symbol id="icon-903" viewbox="0 0 40 40">
+		<path d="M25.5,14.7c0-1.5-0.5-2.7-1.6-3.8c-1-1-2.3-1.6-3.8-1.6c-1.5,0-2.7,0.5-3.8,1.6c-1,1-1.6,2.3-1.6,3.8s0.5,2.7,1.6,3.8 c1,1,2.3,1.6,3.8,1.6c1.5,0,2.7-0.5,3.8-1.6C25,17.4,25.5,16.1,25.5,14.7z M30.9,14.7c0,1.5-0.2,2.8-0.7,3.7l-7.6,16.2 c-0.2,0.5-0.6,0.8-1,1.1c-0.4,0.3-0.9,0.4-1.4,0.4c-0.5,0-1-0.1-1.4-0.4c-0.4-0.3-0.8-0.6-1-1.1l-7.6-16.2c-0.5-1-0.7-2.2-0.7-3.7 c0-3,1-5.5,3.1-7.6S17.2,4,20.2,4c3,0,5.5,1,7.6,3.1S30.9,11.7,30.9,14.7L30.9,14.7z"></path>
+	</symbol>
+	<symbol id="icon-996" viewbox="0 0 40 40">
+		<path d="M35.7,16l-4.8,0v18.6c0,1.1-0.6,1.6-1.6,1.6H20h0h0h-9.3c-1.1,0-1.6-0.6-1.6-1.6V16l-4.8,0L1,8.4l12.7-4.1 c0.1,0,0.2,0,0.2,0c0.5,0,0.7,0.4,0.8,0.8c0,0,0,0,0.1,0.1C15.3,6.9,16.6,9,19.9,9c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0 c3.3,0,4.6-2.1,5.1-3.8c0,0,0.1-0.1,0.1-0.1c0.1-0.4,0.4-0.8,0.8-0.8c0,0,0.1,0,0.2,0L39,8.4L35.7,16z"></path>
+	</symbol>
+	<div id="wrapper">
+		<div id="main">
+			<div class="inner">
+				<div class="image" data-position="center" id="image01"><img alt="IFBP"  style="height:100%;" src="https://emooot.github.io/logo2.png"></div>
+				<div data-position="center" id="image02"><img align="middle" alt="IFBP 4" src="https://emooot.github.io/IFBP4.png"></div>
+				<p id="text01">
+				<span>at Newbridge Rugby Club</span><br>
+				<span>Saturday 10th August</span><br>
+				<span>3 tables | €20 Team | BYOB</span><br>
+				<span>Costumes Essential</span><br></p>
+				<ul class="icons" id="icons01">
+					<li><a class="n01" href="https://www.google.com/maps/search/?api=1&query=newbridge+rubgy+club" target="_blank"><svg>
+					<use xlink:href="#icon-903"></use></svg><span class="label">Location</span></a></li>
+					<li><a class="n02" href="https://www.thecostumeshop.ie/costumes/baywatch-lifeguard-second-skin.html" target="_blank"><svg>
+					<use xlink:href="#icon-996"></use></svg><span class="label">Apparel</span></a></li>
+					<li><a class="ball" href="http://www.newbridgerugby.com/" target="_blank"><span><img height="100%" align="middle" src="https://emooot.github.io/NRFC.png"></span></a></li>
+				</ul>
+
+				<p id="credits">( *costumes not essential )</p>
+			</div>
+		</div>
+	</div>
+	<script>
+	var on = addEventListener,$ = function(q) { return document.querySelector(q) },$$ = function(q) { return document.querySelectorAll(q) },$body = document.body,$inner = $('.inner'),client = (function() {var o = {browser: 'other',browserVersion: 0,os: 'other',osVersion: 0,canUse: null},ua = navigator.userAgent,a, i;a = [['firefox', /Firefox\/([0-9\.]+)/],['edge', /Edge\/([0-9\.]+)/],['safari', /Version\/([0-9\.]+).+Safari/],['chrome', /Chrome\/([0-9\.]+)/],['ie', /Trident\/.+rv:([0-9]+)/]];for (i=0; i < a.length; i++) {if (ua.match(a[i][1])) {o.browser = a[i][0];o.browserVersion = parseFloat(RegExp.$1);break;}}a = [['ios', /([0-9_]+) like Mac OS X/, function(v) { return v.replace('_', '.').replace('_', ''); }],['ios', /CPU like Mac OS X/, function(v) { return 0 }],['android', /Android ([0-9\.]+)/, null],['mac', /Macintosh.+Mac OS X ([0-9_]+)/, function(v) { return v.replace('_', '.').replace('_', ''); }],['windows', /Windows NT ([0-9\.]+)/, null]];for (i=0; i < a.length; i++) {if (ua.match(a[i][1])) {o.os = a[i][0];o.osVersion = parseFloat( a[i][2] ? (a[i][2])(RegExp.$1) : RegExp.$1 );break;}}var _canUse = document.createElement('div');o.canUse = function(p) {var e = _canUse.style,up = p.charAt(0).toUpperCase() + p.slice(1);return (p in e|| ('Moz' + up) in e|| ('Webkit' + up) in e|| ('O' + up) in e|| ('ms' + up) in e);};return o;}()),trigger = function(t) {if (client.browser == 'ie') {var e = document.createEvent('Event');e.initEvent(t, false, true);dispatchEvent(e);} else dispatchEvent(new Event(t));};on('load', function() {setTimeout(function() {$body.className = $body.className.replace(/\bis-loading\b/, 'is-playing');setTimeout(function() {$body.className = $body.className.replace(/\bis-playing\b/, 'is-ready');}, 1500);}, 100);});var style, sheet, rule;style = document.createElement('style');style.appendChild(document.createTextNode(''));document.head.appendChild(style);sheet = style.sheet;if (client.os == 'android') {(function() {sheet.insertRule('body::after { }', 0);rule = sheet.cssRules[0];var f = function() {rule.style.cssText = 'height: ' + (Math.max(screen.width, screen.height)) + 'px';};on('load', f);on('orientationchange', f);on('touchmove', f);})();} else  if (client.os == 'ios') {(function() {sheet.insertRule('body::after { }', 0);rule = sheet.cssRules[0];rule.style.cssText = '-webkit-transform: scale(1.0)';})();(function() {sheet.insertRule('body.ios-focus-fix::before { }', 0);rule = sheet.cssRules[0];rule.style.cssText = 'height: calc(100% + 60px)';on('focus', function(event) {$body.classList.add('ios-focus-fix');}, true);on('blur', function(event) {$body.classList.remove('ios-focus-fix');}, true);})();} else  if (client.browser == 'ie') {(function() {var t, f;f = function() {var mh, h, s, xx, x, i;x = $('#wrapper');x.style.height = 'auto';if (x.scrollHeight <= innerHeight)x.style.height = '100vh';xx = $$('.container.full');for (i=0; i < xx.length; i++) {x = xx[i];s = getComputedStyle(x);x.style.minHeight = '';x.style.height = '';mh = s.minHeight;x.style.minHeight = 0;x.style.height = '';h = s.height;if (mh == 0)continue;x.style.height = (h > mh ? 'auto' : mh);}};(f)();on('resize', function() {clearTimeout(t);t = setTimeout(f, 250);});on('load', f);})();}if (!client.canUse('object-fit')) {var xx = $$('.image[data-position]'),x, c, i, src;for (i=0; i < xx.length; i++) {x = xx[i];c = x.firstChild;if (c.tagName != 'IMG')c = c.firstChild;if (c.parentNode.classList.contains('deferred')) {c.parentNode.classList.remove('deferred');src = c.getAttribute('data-src');c.removeAttribute('data-src');} else src = c.getAttribute('src');c.style['backgroundImage'] = 'url(\'' + src + '\')';c.style['backgroundSize'] = 'cover';c.style['backgroundPosition'] = x.dataset.position;c.style['backgroundRepeat'] = 'no-repeat';c.src = 'data:image/svg+xml;charset=utf8,' + escape('<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 1 1"><\/svg>');}}
+	</script>
+</body>
+>>>>>>> f8047d779993b3667eb8187f607bbd7e23583b7b
 </html>
